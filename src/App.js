@@ -12,7 +12,7 @@ export default function App() {
   }, []);
 
   const handleAllow = async () => {
-    const response = await fetch("https://your-railway-sso-url/consent", {
+    const response = await fetch("https://ssoserver-production.up.railway.app/consent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
